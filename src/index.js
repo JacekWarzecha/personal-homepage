@@ -4,6 +4,9 @@ import { createRoot } from "react-dom/client";
 // import { store } from './app/store';
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Globalstyle } from "./Globalstyle";
+import { ThemeProvider } from "styled-components";
+import { theme } from "./theme";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -11,8 +14,11 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     {/* <Provider store={store}> */}
-    <App />
-    {/* </Provider> */}
+    <ThemeProvider theme={theme}>
+      <Globalstyle />
+      <App />
+      {/* </Provider> */}
+    </ThemeProvider>
   </React.StrictMode>
 );
 
