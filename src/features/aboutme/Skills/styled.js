@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   border-radius: 4px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
+  margin-bottom: 72px;
 `;
 export const Header = styled.header`
   display: flex;
@@ -42,4 +43,8 @@ export const List = styled.ul`
   padding-left: 20px;
 `;
 
-export const ListItem = styled.li``;
+export const ListItem = styled.li`
+  &::marker {
+    color: ${({ theme }) => theme.color.scienceBlue};
+  }
+`;

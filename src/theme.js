@@ -4,5 +4,6 @@ export const theme = {
     slateGrey: "#6E7E91",
     white: "#FFFFFF",
     mineShaft: "#252525",
+    scienceBlue: "#0366D6",
   },
 };
