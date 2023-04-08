@@ -1,11 +1,13 @@
+import { Headline } from "./features/aboutme/Headline";
 import { Skills } from "./features/aboutme/Skills";
+import Container from "./features/aboutme/Container";
 
 function App() {
   return (
-    <div>
-      <header>Ok let's do it!</header>
+    <Container>
+      <Headline></Headline>
       <Skills />
-    </div>
+    </Container>
   );
 }
 

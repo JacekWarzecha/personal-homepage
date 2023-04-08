@@ -17,9 +17,11 @@ html {
     background: ${({ theme }) => theme.color.mercury};
     color: ${({ theme }) => theme.color.slateGrey};
     font-family: 'Inter', sans-serif;
+    font-style: normal;
     min-height: 100vh;
     word-break: break-word;
     font-size: 20px;
+    font-weight: 400;
 }
 
 `;

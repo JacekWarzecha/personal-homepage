@@ -5,5 +5,6 @@ export const theme = {
     white: "#FFFFFF",
     mineShaft: "#252525",
     scienceBlue: "#0366D6",
+    iron: "#D1D5DA",
   },
 };

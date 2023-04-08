@@ -24,6 +24,7 @@ export const Header = styled.header`
 export const Title = styled.h2`
   margin: 0;
   padding-right: 16px;
+  font-weight: 900;
 `;
 export const Icon = styled.img`
   width: 27px;
