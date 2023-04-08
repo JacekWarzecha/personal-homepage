@@ -44,7 +44,7 @@ export const Skills = () => (
     </Wrapper>
 
     <Wrapper>
-      <Header>
+      <Header padding>
         <Title>What i want to learn next</Title>
         <Icon src={imgFutureSkills}></Icon>
       </Header>

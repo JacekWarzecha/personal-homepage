@@ -11,6 +11,7 @@ export const Photo = styled.img`
   max-width: 398px;
   max-height: 398px;
   padding-right: 66px;
+  background: ${({ theme }) => theme.color.whiteLilac};
 `;
 
 export const Div = styled.div`
@@ -22,6 +23,7 @@ export const Paragraph = styled.p`
   font-size: 12px;
   line-height: 130%;
   font-weight: 700;
+  letter-spacing: normal;
 
   ${({ description }) =>
     description &&
@@ -29,7 +31,6 @@ export const Paragraph = styled.p`
       font-weight: 400;
       font-size: 20px;
       line-height: 140%;
-      letter-spacing: 0.05em;
       margin: 0;
       padding-top: 35px;
       padding-bottom: 32px;
@@ -38,6 +39,7 @@ export const Paragraph = styled.p`
 
 export const H1 = styled.h1`
   margin: 0;
+  font-size: 38px;
 `;
 
 export const Button = styled.button`

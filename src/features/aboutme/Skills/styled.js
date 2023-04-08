@@ -19,12 +19,20 @@ export const Header = styled.header`
   border-bottom: solid 1px ${({ theme }) => theme.color.mercury};
   font-size: 30px;
   padding-bottom: 15px;
+
+  ${({ padding }) =>
+    padding &&
+    css`
+      padding-bottom: 18px;
+    `}
 `;
 
 export const Title = styled.h2`
   margin: 0;
   padding-right: 16px;
   font-weight: 900;
+  line-height: 36px;
+  font-size: 30px;
 `;
 export const Icon = styled.img`
   width: 27px;
@@ -42,6 +50,7 @@ export const ContentColumn = styled.div``;
 
 export const List = styled.ul`
   padding-left: 20px;
+  margin: 0;
 `;
 
 export const ListItem = styled.li`

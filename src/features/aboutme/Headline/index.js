@@ -10,12 +10,12 @@ import {
   Mail,
   Icon,
 } from "./styled";
-import jack1 from "../images/jack1.jpg";
+import jack2 from "../images/jack2.png";
 import mailArrow from "../images/mailArrow.png";
 
 export const Headline = () => (
   <Wrapper>
-    <Photo src={jack1}></Photo>
+    <Photo src={jack2}></Photo>
     <Div>
       <ThemeButtonArea>
         <Paragraph>DARK MODE OFF</Paragraph>
