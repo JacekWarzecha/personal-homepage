@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 import Vector from "../images/Vector.png";
+import toggle from "../images/toggle.png";
+import brightness1 from "../images/brightness 1.png";
 
 export const Wrapper = styled.div`
   display: grid;
@@ -40,10 +42,18 @@ export const Paragraph = styled.p`
 export const H1 = styled.h1`
   margin: 0;
   font-size: 38px;
+  font-weight: 900;
+  line-height: 46px;
+  color: ${({ theme }) => theme.color.mineShaft};
+`;
+
+export const Link = styled.a`
+  display: flex;
+  justify-self: start;
+  text-decoration: none;
 `;
 
 export const Button = styled.button`
-  justify-self: start;
   background: ${({ theme }) => theme.color.scienceBlue};
   color: ${({ theme }) => theme.color.white};
   border: none;
@@ -53,22 +63,51 @@ export const Button = styled.button`
   font-size: 20px;
   display: flex;
   align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const ThemeButtonArea = styled.div`
+  display: flex;
+  justify-self: end;
+  align-items: center;
 `;
 
 export const ThemeButton = styled.button`
   margin-left: 13px;
   width: 47px;
   height: 25px;
+  background: transparent;
   background-image: url("${Vector}");
   background-size: cover;
   background-position: center;
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 218, 30);
+
   /* background: ${({ theme }) => theme.color.iron}; */
-  border: solid 1px rgba(209, 213, 218, 0.3);
+  /* border: solid 1px rgba(209, 213, 218, 0.3); */
 `;
 
-export const ThemeButtonArea = styled.div`
+export const Toggle = styled.div`
+  background-image: url("${toggle}");
+  background-size: cover;
+  background-position: center;
+  width: 20px;
+  height: 20px;
   display: flex;
-  justify-self: end;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2.5px 24.5px 2.5 px; */
+`;
+
+export const Brightness = styled.div`
+  background-image: url("${brightness1}");
+  background-size: cover;
+  background-position: center;
+  width: 14px;
+  height: 14px;
 `;
 
 export const Mail = styled.div`
