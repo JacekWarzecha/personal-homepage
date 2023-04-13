@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
   max-width: 1216px;
-  padding: 32px;
+  padding: 32px 32px 24px;
   margin: auto;
   background: ${({ theme }) => theme.color.white};
   display: grid;
@@ -54,6 +54,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  padding-bottom: 8px;
   &::marker {
     color: ${({ theme }) => theme.color.scienceBlue};
   }
