@@ -26,5 +26,3 @@ export const Paragraph = styled.p`
   padding-bottom: 24px;
   line-height: 140%;
 `;
-
-export const Projects = styled.div``;
