@@ -15,6 +15,7 @@ import {
 } from "./styled";
 import jack2 from "../images/jack2.png";
 import mailArrow from "../images/mailArrow.png";
+import { mail } from "../../aboutme/mail";
 
 export const Headline = () => (
   <Wrapper>
@@ -34,7 +35,7 @@ export const Headline = () => (
         I like to create interessing web pages. Currently i' m looking for new
         job opportunities.
       </Paragraph>
-      <Link href="mailto:drjackys@gmail.com">
+      <Link href={`mailto:${mail}`} title={mail}>
         <Button>
           <Mail>
             <Icon src={mailArrow}></Icon>
