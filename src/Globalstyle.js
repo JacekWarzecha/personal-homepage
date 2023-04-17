@@ -14,7 +14,7 @@ html {
 }
 
 #root {
-    max-width: 1920px;
+    /* max-width: 1920px; */
     margin: auto;
     background: ${({ theme }) => theme.color.whiteLilac};
     color: ${({ theme }) => theme.color.slateGrey};
