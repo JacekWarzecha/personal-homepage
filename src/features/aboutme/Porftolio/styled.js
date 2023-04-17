@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  margin-bottom: 88px;
+`;
 
 export const Header = styled.div`
   display: flex;
