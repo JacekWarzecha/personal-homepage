@@ -8,12 +8,11 @@ import {
 
 function* axiosRepositoriesHandler() {
   try {
-    yield delay(1250);
+    yield delay(2000);
     const repositories = yield call(getRepositories);
     yield put(axiosRepositoriesSuccess(repositories));
   } catch (error) {
     yield put(axiosRepositoriesError());
-    yield call(alert, "Coś poszło nie tak.");
   }
 }
 

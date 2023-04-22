@@ -26,5 +26,4 @@ export const Title = styled.h2`
 export const Paragraph = styled.p`
   margin: 0;
   padding-bottom: 24px;
-  line-height: 140%;
 `;
