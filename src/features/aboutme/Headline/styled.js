@@ -63,6 +63,7 @@ export const Button = styled.button`
   font-size: 20px;
   display: flex;
   align-items: center;
+  transition: box-shadow 0.3s;
 
   &:hover {
     cursor: pointer;

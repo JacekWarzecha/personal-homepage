@@ -22,6 +22,11 @@ export const Mail = styled.a`
   color: ${({ theme }) => theme.color.mineShaft};
   text-decoration: none;
   padding-bottom: 24px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: ${({ theme }) => theme.color.scienceBlue};
+  }
 `;
 
 export const Description = styled.p`
