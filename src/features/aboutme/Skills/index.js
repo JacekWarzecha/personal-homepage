@@ -8,15 +8,15 @@ import {
   Title,
   Icon,
 } from "./styled";
-import imgOwnedSkills from "../images/imgOwnedSkills🛠️.png";
-import imgFutureSkills from "../images/imgFutureSkills🚀.png";
+import tools from "../images/🛠️.svg";
+import rocket from "../images/🚀.svg";
 
 export const Skills = () => (
   <>
     <Wrapper>
       <Header>
         <Title>My skillset includes</Title>
-        <Icon src={imgOwnedSkills}></Icon>
+        <Icon src={tools}></Icon>
       </Header>
       <Content>
         <ContentColumn>
@@ -46,7 +46,7 @@ export const Skills = () => (
     <Wrapper>
       <Header padding>
         <Title>What i want to learn next</Title>
-        <Icon src={imgFutureSkills}></Icon>
+        <Icon src={rocket}></Icon>
       </Header>
       <Content>
         <ContentColumn>
