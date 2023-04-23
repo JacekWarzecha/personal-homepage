@@ -1,6 +1,7 @@
 import axios from "axios";
 
+const githubAPIRepositories =
+  "https://api.github.com/users/JacekWarzecha/repos";
+
 export const getRepositories = () =>
-  axios
-    .get("https://api.github.com/users/JacekWarzecha/repos")
-    .then((response) => response.data);
+  axios.get(githubAPIRepositories).then((response) => response.data);
