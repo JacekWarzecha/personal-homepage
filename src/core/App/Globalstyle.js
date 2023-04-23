@@ -14,18 +14,15 @@ html {
 }
 
 #root {
-    /* max-width: 1920px; */
-    margin: auto;
-    background: ${({ theme }) => theme.color.whiteLilac};
-    color: ${({ theme }) => theme.color.slateGrey};
+    transition: background 0.3s;
+    background: ${({ theme }) => theme.colors.site.background};
+    color: ${({ theme }) => theme.colors.site.text};
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    min-height: 100vh;
     word-break: break-word;
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.05em;
     line-height:140%;
 }
-
 `;
