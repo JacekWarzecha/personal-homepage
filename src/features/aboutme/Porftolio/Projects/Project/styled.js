@@ -12,7 +12,7 @@ export const Repo = styled.div`
   /* display: flex;
   flex-direction: column; */
 
-  background: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.colors.boxBackground};
   padding: 56px 56px 48px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
@@ -31,7 +31,7 @@ export const H3 = styled.h3`
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Description = styled.p`
@@ -65,7 +65,7 @@ export const LinksValue = styled.dd`
 
 export const Link = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.color.scienceBlue};
+  color: ${({ theme }) => theme.colors.primary};
   border-bottom: 1px solid rgb(3, 102, 214, 0.2);
   transition: border-bottom 0.3s;
 

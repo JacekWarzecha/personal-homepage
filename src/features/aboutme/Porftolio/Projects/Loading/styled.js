@@ -10,5 +10,5 @@ export const Paragraph = styled.p`
   padding-top: 64px;
   padding-bottom: 48px;
   margin: 0;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textPrimary};
 `;

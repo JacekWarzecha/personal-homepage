@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   max-width: 1216px;
   padding: 32px 32px 24px;
   margin: auto;
-  background: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.colors.boxBackground};
   display: grid;
   grid-template-rows: auto auto;
   border-radius: 4px;
@@ -15,8 +15,8 @@ export const Wrapper = styled.div`
 export const Header = styled.header`
   display: flex;
   align-items: center;
-  color: ${({ theme }) => theme.color.mineShaft};
-  border-bottom: solid 1px ${({ theme }) => theme.color.mercury};
+  color: ${({ theme }) => theme.colors.textPrimary};
+  border-bottom: solid 1px ${({ theme }) => theme.colors.headerLine};
   font-size: 30px;
   padding-bottom: 15px;
 
@@ -56,6 +56,6 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   padding-bottom: 8px;
   &::marker {
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;

@@ -13,7 +13,7 @@ export const Photo = styled.img`
   max-width: 398px;
   max-height: 398px;
   padding-right: 66px;
-  background: ${({ theme }) => theme.color.whiteLilac};
+  background: ${({ theme }) => theme.colors.site.background};
 `;
 
 export const Div = styled.div`
@@ -22,21 +22,12 @@ export const Div = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 12px;
-  line-height: 130%;
-  font-weight: 700;
-  letter-spacing: normal;
-
-  ${({ description }) =>
-    description &&
-    css`
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 140%;
-      margin: 0;
-      padding-top: 35px;
-      padding-bottom: 32px;
-    `}
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  padding-top: 35px;
+  padding-bottom: 32px;
 `;
 
 export const H1 = styled.h1`
@@ -44,7 +35,7 @@ export const H1 = styled.h1`
   font-size: 38px;
   font-weight: 900;
   line-height: 46px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const Link = styled.a`
@@ -54,8 +45,8 @@ export const Link = styled.a`
 `;
 
 export const Button = styled.button`
-  background: ${({ theme }) => theme.color.scienceBlue};
-  color: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.colors.primary};
+  color: white;
   border: none;
   border-radius: 4px;
   padding: 16px 16px 16px 18px;
@@ -70,27 +61,6 @@ export const Button = styled.button`
     box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
       -2px -2px 0px #8cc2ff;
   }
-`;
-
-export const ThemeButtonArea = styled.div`
-  display: flex;
-  justify-self: end;
-  align-items: center;
-`;
-
-export const ThemeButton = styled.button`
-  margin-left: 13px;
-  width: 47px;
-  height: 25px;
-  background: transparent;
-  background-image: url("${Vector}");
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 218, 30);
-
-  /* background: ${({ theme }) => theme.color.iron}; */
-  /* border: solid 1px rgba(209, 213, 218, 0.3); */
 `;
 
 export const Toggle = styled.div`
@@ -114,7 +84,7 @@ export const Brightness = styled.div`
 `;
 
 export const Mail = styled.div`
-  border: 2px solid ${({ theme }) => theme.color.white};
+  border: 2px solid currentColor;
   width: 19px;
   height: 17px;
   margin-right: 19px;

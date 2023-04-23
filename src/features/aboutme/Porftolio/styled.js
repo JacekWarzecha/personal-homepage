@@ -8,7 +8,7 @@ export const Header = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
 export const Icon = styled.img`

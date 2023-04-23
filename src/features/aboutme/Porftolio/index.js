@@ -1,5 +1,5 @@
 import { Wrapper, Header, Icon, Title, Paragraph } from "./styled";
-import Shape from "../images/Shape.png";
+import Shape from "../AboutMe/images/Shape.png";
 import { Projects } from "./Projects";
 import { useSelector, useDispatch } from "react-redux";
 import {

@@ -5,33 +5,31 @@ import {
   Paragraph,
   H1,
   Button,
-  ThemeButton,
-  ThemeButtonArea,
   Mail,
   Icon,
   Link,
-  Toggle,
-  Brightness,
 } from "./styled";
 import jack2 from "../images/jack2.png";
 import mailArrow from "../images/mailArrow.png";
-import { mail } from "../../aboutme/mail";
+import { mail } from "../mail";
+import { ThemeSwitch } from "../../../../common/ThemeSwitch";
 
 export const Headline = () => (
   <Wrapper>
     <Photo src={jack2} alt="theme"></Photo>
     <Div>
-      <ThemeButtonArea>
+      {/* <ThemeButtonArea>
         <Paragraph>DARK MODE OFF</Paragraph>
         <ThemeButton>
           <Toggle>
             <Brightness></Brightness>
           </Toggle>
         </ThemeButton>
-      </ThemeButtonArea>
+      </ThemeButtonArea> */}
+      <ThemeSwitch />
       <Paragraph>THIS IS</Paragraph>
       <H1>Jacek Warzecha</H1>
-      <Paragraph description>
+      <Paragraph>
         I like to create interessing web pages. Currently i' m looking for new
         job opportunities.
       </Paragraph>
