@@ -4,6 +4,7 @@ export const List = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
 `;
 
 export const Item = styled.li`
@@ -17,7 +18,7 @@ export const Link = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    ${({ theme }) => theme.colors.primary}
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;
 

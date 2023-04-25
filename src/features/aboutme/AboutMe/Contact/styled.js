@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
-export const Address = styled.address`
+export const Wrapper = styled.footer`
   display: grid;
   grid-template-rows: auto auto auto auto;
-  font-style: normal;
 `;
 
-export const Paragraph = styled.p`
+export const LetsTalk = styled.h2`
   font-size: 12px;
   letter-spacing: normal;
   font-weight: 700;
@@ -15,13 +14,20 @@ export const Paragraph = styled.p`
   padding-bottom: 24px;
 `;
 
+export const Address = styled.address`
+  font-style: normal;
+`;
+
+export const MailWrapper = styled.div`
+  margin-bottom: 24px;
+`;
+
 export const Mail = styled.a`
   font-weight: 900;
   font-size: 32px;
   line-height: 39px;
   color: ${({ theme }) => theme.colors.textPrimary};
   text-decoration: none;
-  padding-bottom: 24px;
   transition: color 0.3s;
 
   &:hover {

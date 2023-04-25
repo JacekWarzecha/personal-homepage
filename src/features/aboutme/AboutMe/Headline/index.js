@@ -16,7 +16,7 @@ import { ThemeSwitch } from "../../../../common/ThemeSwitch";
 
 export const Headline = () => (
   <Wrapper>
-    <Photo src={jack2} alt="theme"></Photo>
+    <Photo src={jack2} alt="Jacek_Warzecha"></Photo>
     <Div>
       {/* <ThemeButtonArea>
         <Paragraph>DARK MODE OFF</Paragraph>
