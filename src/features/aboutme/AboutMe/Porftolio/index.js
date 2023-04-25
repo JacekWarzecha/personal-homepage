@@ -1,12 +1,12 @@
 import { Wrapper, Header, Icon, Title, Paragraph } from "./styled";
-import Shape from "../AboutMe/images/Shape.png";
+import Shape from "../images/Shape.png";
 import { Projects } from "./Projects";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectRepositoriesStatus,
   selectRepositories,
-} from "../repositoriesSlice";
-import { axiosRepositories } from "../repositoriesSlice";
+  axiosRepositories,
+} from "../../repositoriesSlice";
 import { useEffect } from "react";
 
 export const Portfolio = () => {
