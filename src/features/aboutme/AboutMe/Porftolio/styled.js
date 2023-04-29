@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import { ReactComponent as GithubIcon } from "./githubIcon.svg";
 
-export const Wrapper = styled.div`
+export const StyledGithubIcon = styled(GithubIcon)`
+  margin-bottom: 13px;
+  color: ${({ theme }) => theme.colors.primary};
+`;
+
+export const Section = styled.div`
   margin-bottom: 88px;
 `;
 
@@ -11,9 +17,9 @@ export const Header = styled.div`
   color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
-export const Icon = styled.img`
-  padding-bottom: 13px;
-`;
+// export const Icon = styled.img`
+//   padding-bottom: 13px;
+// `;
 
 export const Title = styled.h2`
   margin: 0;
