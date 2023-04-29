@@ -1,10 +1,10 @@
-import { Paragraph, Wrapper } from "./styled";
+import { Paragraph, Wrapper, StyledSpinnerIcon } from "./styled";
 
 export const Loading = () => {
   return (
     <Wrapper>
       <Paragraph>Please wait, projects are being loaded...</Paragraph>
-      <p>coś</p>
+      <StyledSpinnerIcon />
     </Wrapper>
   );
 };
