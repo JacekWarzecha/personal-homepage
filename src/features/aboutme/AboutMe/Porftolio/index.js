@@ -1,5 +1,4 @@
-import { Wrapper, Header, Icon, Title, Paragraph } from "./styled";
-import Shape from "../images/Shape.png";
+import { Section, Header, Title, Paragraph, StyledGithubIcon } from "./styled";
 import { Projects } from "./Projects";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -18,13 +17,13 @@ export const Portfolio = () => {
     dispatch(axiosRepositories());
   }, [dispatch]);
   return (
-    <Wrapper>
+    <Section>
       <Header>
-        <Icon src={Shape}></Icon>
+        <StyledGithubIcon />
         <Title>Portfolio</Title>
         <Paragraph>My recent projects</Paragraph>
       </Header>
       <Projects status={status} repositories={repositories} />
-    </Wrapper>
+    </Section>
   );
 };
