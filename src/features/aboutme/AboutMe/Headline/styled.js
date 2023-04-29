@@ -1,11 +1,10 @@
 import styled, { css } from "styled-components";
-import Vector from "../images/Vector.png";
-import toggle from "../images/toggle.png";
-import brightness1 from "../images/brightness 1.png";
+import { ButtonLink } from "../ButtonLink";
+import { ReactComponent as EnvelopeIcon } from "../images/Message.svg";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.header`
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
   margin-bottom: 63px;
 `;
 
@@ -21,6 +20,16 @@ export const Div = styled.div`
   align-content: center;
 `;
 
+export const ThisIs = styled.p`
+  color: ${({ theme }) => theme.colors.site.text};
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: initial;
+  padding-bottom: 12px;
+`;
+
 export const Paragraph = styled.p`
   font-weight: 400;
   font-size: 20px;
@@ -28,6 +37,7 @@ export const Paragraph = styled.p`
   margin: 0;
   padding-top: 35px;
   padding-bottom: 32px;
+  max-width: 650px;
 `;
 
 export const H1 = styled.h1`
@@ -38,61 +48,51 @@ export const H1 = styled.h1`
   color: ${({ theme }) => theme.colors.textPrimary};
 `;
 
-export const Link = styled.a`
-  display: flex;
+export const StyledButtonLink = styled(ButtonLink)`
+  display: inline-flex;
+  align-items: center;
   justify-self: start;
-  text-decoration: none;
 `;
 
-export const Button = styled.button`
-  background: ${({ theme }) => theme.colors.primary};
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 16px 16px 16px 18px;
-  font-weight: 600;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  transition: box-shadow 0.3s;
-
-  &:hover {
-    cursor: pointer;
-    box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
-      -2px -2px 0px #8cc2ff;
-  }
-`;
-
-export const Toggle = styled.div`
-  background-image: url("${toggle}");
-  background-size: cover;
-  background-position: center;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 2.5px 24.5px 2.5 px; */
-`;
-
-export const Brightness = styled.div`
-  background-image: url("${brightness1}");
-  background-size: cover;
-  background-position: center;
-  width: 14px;
-  height: 14px;
-`;
-
-export const Mail = styled.div`
-  border: 2px solid currentColor;
-  width: 19px;
-  height: 17px;
+export const IconEnvelope = styled(EnvelopeIcon)`
   margin-right: 19px;
-  display: flex;
-  align-items: center;
-  border-radius: 4px;
 `;
 
-export const Icon = styled.img`
-  display: flex;
-`;
+// export const Link = styled.a`
+//   display: flex;
+//   justify-self: start;
+//   text-decoration: none;
+// `;
+
+// export const Button = styled.button`
+//   background: ${({ theme }) => theme.colors.primary};
+//   color: white;
+//   border: none;
+//   border-radius: 4px;
+//   padding: 16px 16px 16px 18px;
+//   font-weight: 600;
+//   font-size: 20px;
+//   display: flex;
+//   align-items: center;
+//   transition: box-shadow 0.3s;
+
+//   &:hover {
+//     cursor: pointer;
+//     box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
+//       -2px -2px 0px #8cc2ff;
+//   }
+// `;
+
+// export const Mail = styled.div`
+//   border: 2px solid currentColor;
+//   width: 19px;
+//   height: 17px;
+//   margin-right: 19px;
+//   display: flex;
+//   align-items: center;
+//   border-radius: 4px;
+// `;
+
+// export const Icon = styled.img`
+//   display: flex;
+// `;
