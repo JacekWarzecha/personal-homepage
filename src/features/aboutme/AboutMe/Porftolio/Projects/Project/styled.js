@@ -1,27 +1,22 @@
 import styled from "styled-components";
+import α from "color-alpha";
 
 export const Wrapper = styled.div`
-  /* display: flex;
-  flex-wrap: wrap; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
 `;
 
 export const Repo = styled.div`
-  /* display: flex;
-  flex-direction: column; */
-
   background: ${({ theme }) => theme.colors.boxBackground};
   padding: 56px 56px 48px;
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
-    0px 16px 58px rgba(9, 10, 51, 0.03);
-  border: 6px solid rgba(209, 213, 218, 0.3);
-  border-radius: 4px;
-  transition: border 0.3s;
+  box-shadow: ${({ theme }) => theme.boxShadow};
+  border: 6px solid ${({ theme }) => theme.colors.tile.border};
+  border-radius: ${({ theme }) => theme.borderRadiusSmall};
+  transition: border-color 0.3s;
 
   &:hover {
-    border: 6px solid rgba(3, 102, 214, 0.2);
+    border-color: ${({ theme }) => theme.colors.tile.borderHover};
   }
 `;
 
@@ -31,7 +26,7 @@ export const H3 = styled.h3`
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.tile.header};
 `;
 
 export const Description = styled.p`
@@ -42,8 +37,6 @@ export const Description = styled.p`
 
 export const Links = styled.dl`
   margin: 0;
-  /* text-decoration: none;
-  padding-bottom: 8px; */
 `;
 
 export const LinksRow = styled.p`
@@ -66,10 +59,10 @@ export const LinksValue = styled.dd`
 export const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.primary};
-  border-bottom: 1px solid rgb(3, 102, 214, 0.2);
-  transition: border-bottom 0.3s;
+  border-bottom: 1px solid ${({ theme }) => α(theme.colors.primary, 0.3)};
+  transition: border-bottom-color 0.3s;
 
   &:hover {
-    border-bottom: 1px solid rgb(3, 102, 214, 0.8);
+    border-color: unset;
   }
 `;
