@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { ButtonLink } from "../ButtonLink";
 import { ReactComponent as EnvelopeIcon } from "../images/Message.svg";
 
@@ -57,42 +57,3 @@ export const StyledButtonLink = styled(ButtonLink)`
 export const IconEnvelope = styled(EnvelopeIcon)`
   margin-right: 19px;
 `;
-
-// export const Link = styled.a`
-//   display: flex;
-//   justify-self: start;
-//   text-decoration: none;
-// `;
-
-// export const Button = styled.button`
-//   background: ${({ theme }) => theme.colors.primary};
-//   color: white;
-//   border: none;
-//   border-radius: 4px;
-//   padding: 16px 16px 16px 18px;
-//   font-weight: 600;
-//   font-size: 20px;
-//   display: flex;
-//   align-items: center;
-//   transition: box-shadow 0.3s;
-
-//   &:hover {
-//     cursor: pointer;
-//     box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
-//       -2px -2px 0px #8cc2ff;
-//   }
-// `;
-
-// export const Mail = styled.div`
-//   border: 2px solid currentColor;
-//   width: 19px;
-//   height: 17px;
-//   margin-right: 19px;
-//   display: flex;
-//   align-items: center;
-//   border-radius: 4px;
-// `;
-
-// export const Icon = styled.img`
-//   display: flex;
-// `;
