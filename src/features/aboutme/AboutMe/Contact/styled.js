@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.footer`
   display: grid;
   grid-template-rows: auto auto auto auto;
+  margin-bottom: 89px;
 `;
 
 export const LetsTalk = styled.h2`
