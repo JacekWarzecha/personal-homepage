@@ -4,13 +4,6 @@ import { ReactComponent as EnvelopeIcon } from "../images/Message.svg";
 
 const mobileMax = ({ theme }) => theme.breakpoints.mobileMax;
 
-// const common = {
-//   breakpoints: {
-//     mobileMax: 767,
-//     tabletVerticalMax: 991,
-//     tabletHorizontalMax: 1199,
-//   },
-
 export const Wrapper = styled.header`
   margin-bottom: 63px;
 

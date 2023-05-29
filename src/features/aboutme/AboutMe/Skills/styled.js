@@ -24,14 +24,7 @@ export const Header = styled.header`
   font-size: 30px;
   padding-bottom: 15px;
 
-  ${({ padding }) =>
-    padding &&
-    css`
-      padding-bottom: 18px;
-    `} //Zastanawiam się gdybym chciał teraz przekazać padding
-    //dla header w drugiek sekcji jakbym miał to zrobić?
-
-    @media (max-width: ${mobileMax}px) {
+  @media (max-width: ${mobileMax}px) {
     padding-bottom: 12px;
   }
 `;

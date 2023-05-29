@@ -16,6 +16,7 @@ export const Button = styled.button`
   border: none;
   color: inherit;
   outline-offset: 8px;
+  position: relative;
 `;
 
 export const Paragraph = styled.p`

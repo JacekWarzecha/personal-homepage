@@ -4,8 +4,10 @@ export const Skills = ({ title, icon, skills }) => (
   <>
     <Section>
       <Header>
-        <Title>{title}</Title>
-        <Icon src={icon}></Icon>
+        <Title>
+          {title} {""}
+          <Icon src={icon}></Icon>
+        </Title>
       </Header>
       <List>
         {skills.map((skill) => (
