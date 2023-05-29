@@ -1,9 +1,11 @@
 import styled, { css } from "styled-components";
 import { ReactComponent as sun } from "./sun.svg";
 
+const mobileMax = ({ theme }) => theme.breakpoints.mobileMax;
+
 export const Wrapper = styled.div`
   display: flex;
-  justify-self: end;
+  justify-content: end;
 `;
 
 export const Button = styled.button`
@@ -21,6 +23,10 @@ export const Paragraph = styled.p`
   text-transform: uppercase;
   font-weight: bold;
   margin-right: 12px;
+
+  @media (max-width: ${mobileMax}px) {
+    display: none;
+  }
 `;
 
 export const Box = styled.span`

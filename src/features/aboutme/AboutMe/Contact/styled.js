@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
+const mobileMax = ({ theme }) => theme.breakpoints.mobileMax;
+
 export const Wrapper = styled.footer`
   display: grid;
   grid-template-rows: auto auto auto auto;
-  margin-bottom: 89px;
+  margin-bottom: 120px;
+
+  @media (max-width: ${mobileMax}px) {
+    margin-bottom: 31px;
+  }
 `;
 
 export const LetsTalk = styled.h2`
@@ -13,6 +19,10 @@ export const LetsTalk = styled.h2`
   line-height: 130%;
   margin: 0;
   padding-bottom: 24px;
+
+  @media (max-width: ${mobileMax}px) {
+    padding-bottom: 12px;
+  }
 `;
 
 export const Address = styled.address`
@@ -21,6 +31,10 @@ export const Address = styled.address`
 
 export const MailWrapper = styled.div`
   margin-bottom: 24px;
+
+  @media (max-width: ${mobileMax}px) {
+    margin-bottom: 12px;
+  }
 `;
 
 export const Mail = styled.a`
@@ -34,6 +48,12 @@ export const Mail = styled.a`
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
   }
+
+  @media (max-width: ${mobileMax}px) {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+  }
 `;
 
 export const Description = styled.p`
@@ -42,6 +62,13 @@ export const Description = styled.p`
   font-size: 18px;
   margin: 0;
   padding-bottom: 56px;
+
+  @media (max-width: ${mobileMax}px) {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    padding-bottom: 40px;
+  }
 `;
 
 // export const Icons = styled.dl`
