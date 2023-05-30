@@ -66,7 +66,7 @@ export const Links = styled.dl`
 
 export const LinksRow = styled.p`
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto 1fr;
   margin: 0;
   padding-bottom: 8px;
 
