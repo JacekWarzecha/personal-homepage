@@ -1,6 +1,7 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 const mobileMax = ({ theme }) => theme.breakpoints.mobileMax;
+const tabletVerticalMax = ({ theme }) => theme.breakpoints.tabletVerticalMax;
 
 export const Section = styled.section`
   padding: 32px;
@@ -61,6 +62,10 @@ export const List = styled.ul`
   font-size: 18px;
   padding-top: 32px;
   line-height: 140%;
+
+  @media (max-width: ${tabletVerticalMax}px) {
+    grid-template-columns: 1fr 1fr;
+  }
 
   @media (max-width: ${mobileMax}px) {
     grid-template-columns: 1fr;
