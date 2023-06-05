@@ -1,6 +1,6 @@
 import {
   Wrapper,
-  H3,
+  ErrorTitle,
   Paragraph,
   StyledDangerIcon,
   StyledButtonLink,
@@ -11,7 +11,7 @@ export const Error = () => {
   return (
     <Wrapper>
       <StyledDangerIcon />
-      <H3>Ooops! Something went wrong...</H3>
+      <ErrorTitle>Ooops! Something went wrong...</ErrorTitle>
       <Paragraph>
         Sorry, failed to load Github projects. <br />
         You can check them directly on Github.

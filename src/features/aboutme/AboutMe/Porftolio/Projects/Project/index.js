@@ -1,13 +1,13 @@
 import {
   Wrapper,
   Repo,
-  H3,
+  NameRepo,
   Description,
   Links,
   LinksRow,
   LinksValue,
   Link,
-  DT,
+  LinksName,
 } from "./styled";
 
 export const Project = ({ repositories }) => {
@@ -17,13 +17,13 @@ export const Project = ({ repositories }) => {
         ({ id, name, description, html_url, homepage }) =>
           !!description && (
             <Repo key={id}>
-              <H3>{name}</H3>
+              <NameRepo>{name}</NameRepo>
               <Description>{description}</Description>
 
               <Links>
                 {!!homepage && (
                   <LinksRow>
-                    <DT>Demo:</DT>
+                    <LinksName>Demo:</LinksName>
                     <LinksValue>
                       <Link href={homepage} target="_blank" rel="noreferrer">
                         {homepage}
@@ -32,7 +32,7 @@ export const Project = ({ repositories }) => {
                   </LinksRow>
                 )}
                 <LinksRow>
-                  <DT>Code:</DT>
+                  <LinksName>Code:</LinksName>
                   <LinksValue>
                     <Link href={html_url} target="_blank" rel="noreferrer">
                       {html_url}

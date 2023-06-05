@@ -1,4 +1,4 @@
-import { Headline } from "./Headline";
+import { Header } from "./Header";
 import { Skills } from "./Skills";
 import Container from "./Container";
 import { Portfolio } from "./Porftolio";
@@ -9,7 +9,7 @@ import { skills, nextSkills } from "./skillsData";
 
 export const AboutMe = () => (
   <Container>
-    <Headline />
+    <Header />
     <main>
       <Skills title="My skillset includes" icon={tools} skills={skills} />
       <Skills

@@ -1,10 +1,10 @@
 import {
   Photo,
   Wrapper,
-  Div,
+  DetailsWrapper,
   Paragraph,
   ThisIs,
-  H1,
+  Name,
   StyledButtonLink,
   IconEnvelope,
   AboutMe,
@@ -13,14 +13,14 @@ import jack2 from "../images/jack2.png";
 import { mail } from "../mail";
 import { ThemeSwitch } from "../../../../common/ThemeSwitch";
 
-export const Headline = () => (
+export const Header = () => (
   <Wrapper>
     <ThemeSwitch />
     <AboutMe>
       <Photo src={jack2} alt="Jacek_Warzecha"></Photo>
-      <Div>
+      <DetailsWrapper>
         <ThisIs>THIS IS</ThisIs>
-        <H1>Jacek Warzecha</H1>
+        <Name>Jacek Warzecha</Name>
         <Paragraph>
           I like to create interessing web pages. Currently i' m looking for new
           job opportunities.
@@ -29,7 +29,7 @@ export const Headline = () => (
           <IconEnvelope />
           Hire me
         </StyledButtonLink>
-      </Div>
+      </DetailsWrapper>
     </AboutMe>
   </Wrapper>
 );

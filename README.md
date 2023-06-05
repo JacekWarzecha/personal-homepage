@@ -2,7 +2,20 @@
 
 <br/>
 
-### Connect with my personal-homepage: [CLICK](https://jacekwarzecha.github.io/personal-homepage/)
+#### That's my visiting card, where You can find:
+
+- contact to me
+- written projects
+
+<br/>
+
+##### Here You can see this webside:
+
+<br/>
+
+![image](public/personalHomepageGif.gif)
+
+#### Connect with my personal-homepage: [CLICK](https://jacekwarzecha.github.io/personal-homepage/)
 
 <br/>
 

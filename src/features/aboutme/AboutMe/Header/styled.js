@@ -36,7 +36,7 @@ export const Photo = styled.img`
   }
 `;
 
-export const Div = styled.div`
+export const DetailsWrapper = styled.div`
   display: grid;
   align-content: center;
 `;
@@ -72,7 +72,7 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const H1 = styled.h1`
+export const Name = styled.h1`
   margin: 0;
   font-size: 38px;
   font-weight: 900;

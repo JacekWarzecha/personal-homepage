@@ -31,7 +31,7 @@ export const Repo = styled.div`
   }
 `;
 
-export const H3 = styled.h3`
+export const NameRepo = styled.h3`
   margin: 0;
   padding-bottom: 24px;
   font-weight: 700;
@@ -75,7 +75,7 @@ export const LinksRow = styled.p`
   }
 `;
 
-export const DT = styled.dt`
+export const LinksName = styled.dt`
   font-size: 18px;
 
   @media (max-width: ${mobileMax}px) {

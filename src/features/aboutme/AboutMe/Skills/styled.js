@@ -47,10 +47,12 @@ export const Title = styled.h2`
 export const Icon = styled.img`
   width: 27px;
   height: 32px;
+  margin-left: 16px;
 
   @media (max-width: ${mobileMax}px) {
     width: 18px;
     height: 21px;
+    margin-left: 12px;
   }
 `;
 
