@@ -30,8 +30,8 @@ export const Photo = styled.img`
   background: ${({ theme }) => theme.colors.site.background};
 
   @media (max-width: ${mobileMax}px) {
-    max-width: 132px;
-    max-height: 132px;
+    width: 132px;
+    padding-right: 0;
     margin-bottom: 12px;
   }
 `;
