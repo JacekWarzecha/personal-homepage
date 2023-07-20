@@ -4,10 +4,13 @@ export const skills = [
   "React-Saga",
   "React-Router",
   "React-Hooks",
+  "Redux-Toolkit",
   "Axios",
+  "Fetch",
   "JavaScript",
   "HTML",
   "CSS",
+  "ES6",
   "Webpack",
   "Teamwork",
   "Git",
@@ -18,6 +21,7 @@ export const skills = [
   "BEM-convention",
   "Grid & Flexbox",
   "Trello",
+  "Gimp",
 ];
 
 export const nextSkills = [

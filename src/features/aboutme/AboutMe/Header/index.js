@@ -27,7 +27,7 @@ export const Header = () => (
         </Paragraph>
         <StyledButtonLink href={`mailto:${mail}`} title={mail}>
           <IconEnvelope />
-          Hire me
+          Write to me
         </StyledButtonLink>
       </DetailsWrapper>
     </AboutMe>
